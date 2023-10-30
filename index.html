@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Components Example</title>
+    <style>
+        h3 {
+            color: darkorchid;
+        }
+    </style>
+</head>
+<body>
+    <h3>Users</h3>
+    <user-card name="Sharon Barry" avatar="https://randomuser.me/api/portraits/women/3.jpg">
+        <div slot="email">sharonb@yahoo.com</div>
+        <div slot="phone">444-444-5555</div>
+    </user-card>
+    <user-card name="Wayne Bob" avatar="https://randomuser.me/api/portraits/men/5.jpg">
+        <div slot="email">wbob@gmail.com</div>
+        <div slot="phone">111-333-5555</div>
+    </user-card>
+    <script src="userCard.js"></script>
+</body>
+</html>
